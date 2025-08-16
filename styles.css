@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #007BFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+/* Create a flex container */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 900px;
+}
+
+/* Chat container on the left */
+.chat-container {
+    width: 48%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: black;
+    transition: border 0.3s ease-in-out;
+}
+
+/* Dashboard + Speedometer container on the right */
+.right-container {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling for dashboard */
+.dashboard-container {
+    width: 100%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: black;
+    transition: border 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+/* Chat messages */
+.chat-box {
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+}
+
+/* User messages on the right */
+.user-message {
+    align-self: flex-end;
+    background: red;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    margin: 5px;
+}
+
+/* Bot messages on the left */
+.bot-message {
+    align-self: flex-start;
+    background: red;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    margin: 5px;
+}
+
+/* Input box styling */
+.input-box {
+    display: flex;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    color: black;
+}
+
+button {
+    padding: 10px;
+    background: darkblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+button.reset-btn {
+    background: red;
+    margin-left: 5px;
+}
+
+/* Risk Level Styles */
+.low-risk { background-color: green; }
+.medium-risk { background-color: orange; }
+.high-risk {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Speedometer Styling */
+#speedometer {
+    display: block;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
